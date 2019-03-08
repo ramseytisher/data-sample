@@ -4,22 +4,20 @@ import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-const SecondPage = ({data}) => (
+const GetAws = ({data}) => (
   <Layout>
     <SEO title="Page two" />
-    <h1>Hi from the second page</h1>
-    <p>Welcome to page 2</p>
+    <h1>Getting data from AWS App Sync with gatsby-source-graphql</h1>
     <Link to="/">Go back to the homepage</Link>
     <div>
-      <h1>Get data from gatsby-source-graphql</h1>
       <pre>{JSON.stringify(data.emails, 0, 2)}</pre>
     </div>
   </Layout>
 )
 
-export default SecondPage
+export default GetAws
 
-export const query = graphql`
+export const AWS_EMAIL_QUERY = graphql`
     query Emails {
         emails {
             listEmails {
