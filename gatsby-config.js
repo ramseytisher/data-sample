@@ -1,11 +1,26 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
+    title: `Let's Get Data`,
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    author: `@?`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    {
+      resolve: "gatsby-source-graphql",
+      options: {
+          // This type will contain the remote schema Query type
+          typeName: "AWSAppSync",
+          // This is the field under which it's accessible
+          fieldName: "emails",
+          // URL to query from
+          url: `https://lgbsgy4pmngrrnuayjndrroo74.appsync-api.us-east-2.amazonaws.com/graphql`,
+          headers: {
+              "x-api-key": `da2-x64k7nu6abfidbf65ppvbljimm`
+          },
+          refetchInterval: 10,
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
