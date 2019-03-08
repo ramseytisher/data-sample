@@ -9,5 +9,16 @@ export const client = new AWSAppSyncClient({
         type: "API_KEY",
         apiKey: "da2-x64k7nu6abfidbf65ppvbljimm"
     },
+    offlineConfig: {
+        callback: (err, succ) => {
+            if (err) {
+                const { mutation, variables } = err;
+                console.warn(`Error for ${mutation}`, err, variables);
+            } else {
+                const { mutation, variables } = succ;
+                console.info(`SUCCESS for ${mutation}`, succ, variables);
+            }
+        }
+    },
     fetch
 });

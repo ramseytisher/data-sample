@@ -24,7 +24,7 @@ class GetAWSApollo extends React.Component {
     return (
       <Layout>
         <SEO title="Page two" />
-        <h1>Getting data from AWS App Sync with gatsby-source-graphql</h1>
+        <h1>Getting data from AWS App Sync with react-apollo dynamically</h1>
         <Link to="/">Go back to the homepage</Link>
         <div>
           <pre>{JSON.stringify(this.props.emails, 0, 2)}</pre>

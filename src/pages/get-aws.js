@@ -7,7 +7,7 @@ import SEO from "../components/seo"
 const GetAws = ({data}) => (
   <Layout>
     <SEO title="Page two" />
-    <h1>Getting data from AWS App Sync with gatsby-source-graphql</h1>
+    <h1>Getting data from AWS App Sync with gatsby-source-graphql during the build step</h1>
     <Link to="/">Go back to the homepage</Link>
     <div>
       <pre>{JSON.stringify(data.emails, 0, 2)}</pre>

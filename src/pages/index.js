@@ -14,8 +14,8 @@ const IndexPage = () => (
       <Image />
     </div>
     <Link to="/get-aws/">get-aws</Link>{" | "}
-    <Link to="/get-aws-apollo/">get-aws-apollo</Link>
-
+    <Link to="/get-aws-apollo/">get-aws-apollo</Link>{" | "}
+    <Link to="/add-aws-apollo/">add-aws-apollo</Link>{" | "}
   </Layout>
 )
 
