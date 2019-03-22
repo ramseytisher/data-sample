@@ -7,7 +7,7 @@ export const client = new AWSAppSyncClient({
     region: `us-east-2`,
     auth: {
         type: "API_KEY",
-        apiKey: "da2-x64k7nu6abfidbf65ppvbljimm"
+        apiKey: "da2-4crv4tplfrhujg34cksyyp6xcm"
     },
     offlineConfig: {
         callback: (err, succ) => {

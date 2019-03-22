@@ -16,7 +16,7 @@ module.exports = {
           // URL to query from
           url: `https://lgbsgy4pmngrrnuayjndrroo74.appsync-api.us-east-2.amazonaws.com/graphql`,
           headers: {
-              "x-api-key": `da2-x64k7nu6abfidbf65ppvbljimm`
+              "x-api-key": `da2-4crv4tplfrhujg34cksyyp6xcm`
           },
           refetchInterval: 10,
       },

@@ -16,7 +16,12 @@ const IndexPage = () => (
     <Link to="/get-aws/">get-aws</Link>{" | "}
     <Link to="/get-aws-apollo/">get-aws-apollo</Link>{" | "}
     <Link to="/add-aws-apollo/">add-aws-apollo</Link>{" | "}
+    <Link to="/add-aws-auth/">add-aws-auth</Link>{" | "}
+    <Link to="/add-aws-auth-comp/">add-aws-auth-comp</Link>{" | "}
   </Layout>
 )
 
 export default IndexPage
+
+// try this out: https://github.com/dabit3/gatsby-auth-starter-aws-amplify
+
